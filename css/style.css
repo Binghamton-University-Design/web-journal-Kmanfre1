@@ -3,14 +3,12 @@
 body {
 	margin: 0;	
 	background: black;
-	color: white;
-	font-family: 'Roboto Mono', monospace;
+	color: #222222;
+	font-family: 'Ubuntu';
 	font-weight: 200;
 }
 
-h1, h2, h3, h4, p {
-	margin-top: 0;
-	margin-bottom: 1em;
+body.p1 {
 }
 
 h1, h2 {
@@ -23,18 +21,137 @@ h1, h2 {
 }
 
 #main {
-	background: green;
+	background: white;
 	margin: 2em;
 	padding: 2em;
 }
 
 #sidebar {
-	background: pink;
+	background: #222222;
 }
 
 #content {
-	background: red;
+	/*background: red;*/
 }
+
+#logo {
+	padding: 3em 0;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+#logo h1 {
+	margin: 0;
+}
+
+#logo img {
+	width: 75%;
+	height: auto;
+	margin-left: 2.4em;
+}
+
+.item span {
+	font-weight: 800;
+}
+
+.item img {
+	margin-bottom: 2em;
+	width: 100%;
+	height: 100%;
+}
+
+#nav li a{
+	color: #888888;
+	margin-left: 6em;
+	transition: all .3s ease-in-out;
+	text-decoration: none;
+	line-height: 2em;
+}
+
+#nav li a:hover{
+	color: #cccccc;
+	text-decoration: none;
+}
+
+#exquisite {
+	position: relative;
+	margin-bottom: 0;
+
+}
+
+#exquisite .grid {
+	grid-gap: 0;
+}
+
+#exquisite .grid img {
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#projects {
+	margin-bottom: 2em;
+}
+
+
+#projects .grid-item {
+	color: white;
+	position: relative;
+
+}
+
+#projects .grid-item img {
+	display:block;
+	width:100%;
+	height:auto;
+
+}
+
+	#projects .grid-item .overlay {
+	opacity: 0;
+	transition: .3s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#projects .grid-item:hover .overlay {
+	opacity: 1;
+
+}
+
+#projects .grid-item .overlay .project-title h3 {
+	margin-bottom: 0;
+
+
+}
+
+footer {
+  text-align: center;
+  padding: 2px;
+  background-color: white;
+  color: #222222;
+  text-decoration: none;
+}
+
+.email{
+	color: #888888;
+	text-decoration: none;
+}
+
+.email:hover{
+	color: #cccccc;
+	text-decoration: none;
+}
+
 
 @media (max-width: 699px) {
 
@@ -48,3 +165,47 @@ h1, h2 {
 	}
 
 }
+
+/*
+
+                ' '  ''
+            ''.-::::-::--'
+          '.-::::::////::--'            .-.'
+         '-:::/:::-///:////:.          '++/'  ''
+         '-///+/::::/::/://::'         .++:. ::--'.'
+        '-:++/:-----://::::::.         '++///os+-::---
+         ':o+/:------://:////:--.'''''.:+o+++os/--://:.
+         '-o+/:::://+ossys/++:::--://::/+ooo+oo/-::--:-
+          'smmds/ydmmdds++//+/''.-/ss+++oosssssso/:---:'
+           .hdho::+++::://+/+syoohmdysoosooossyysys/--+:'
+            /++o/////:://+++sydNNmds+//oo+oooshhhhy-:-..
+            .ooso+++o+/++++ohdNNNhyoo//oo++oossys+. '-..
+             -+osyosso+ooosdNNNNNdysys+oossyyyyy.    -..
+              '/o++/++ssoymNmNNNNmhyyhdyyyyyydmd-     '
+                sooooohddmNmhNNNNNNmhhhddhyydmNmy
+              -odmyoshddmNmddNNNNNNmmmmdsoyhhdmmd-
+            :hNNNNmhhyhdNNddmNNNNNNNhmNNmy+sddNhd+
+          'sNNNmNNNNNs:dNNmmNNNNNNNNmhdNNNhyddmmN+
+        '+dNNhshmNNNNmsNNNNNNNNmmddmNNhhmNmhdmmNms
+        yydNmhyyhmNNNNNmNNNNNNNmmmmmddmhsymdhmdmdd'
+       :m/oNNddhhdNNNNNNhmNmmmmmmmmmmmhddoohdhmddm+
+       yo/hNNNNmdmNNNNNNmhmdmddddmmmmmmhh+soshhmdhd.
+     ':o+oNNNNNNNmNNNNNmmdydhdmmmdhdmdmmyooysoyhmdmo
+    -oo+oyNNNNNdNNNNNmmNmmshdsmmmmdsdhmddso+ssohdhyh-
+  '+so++++ooydmmmNNNmmdNmdohhysdmmdoyhymmmy+o+oshhhss
+  /ss++++++ooooNNNNNNmymmmshhsyssddo+yhshmmh+o+osymmy.
+  +yys+++++oo+smhmmmmmhymmdsddsd+sdsoysyssydso++++hhhh:
+  -yshydhsooymmd.hmhmmdhydmhsdohy/oyosdoysoo+y+oooooysh/'
+   -dNNmdsydmmy. -mdhmmydoydds/oo++/oosoohodssosssoosysy/-
+    '/yhhyo:-.    oyyhmymooyss::+++/++/:ymyoyoo++++ooooo+o.
+       '           yhydhdy+ohso//+////+o+///ooo++//+hoooooo-
+                   :syydhsoyoso+++:--:/++yo/::/:::///osys/++
+                ':/++ss+s++ooosooo/::::/osys++so/:-:::/++++/
+                /so++o/+//+/::///os/:/o::/hd++dy++--//::::::
+                -hy++ooo+ss+++++sdmmy+/y+/:::::/:---/+++++++
+               ':+//+o//sh-:hmNNmmmmmmdsy///:::://:::/+++++:
+            '-///:::-:+/::/dmmNNNmmmmmmmmmyo/:--/++/++/:::+s
+          '+ddhy+//::--:/smmmmmmmmmmmmNNmmmmy/--:+//+o/:sdmd
+         'ymmmmmds/:/++ymmmmmdddmmmmmmNNmmmmmdy+-//+//odmmmd
+         				Welcome to Flavortown
+*/
