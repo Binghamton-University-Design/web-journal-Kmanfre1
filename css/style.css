@@ -13,6 +13,11 @@ body.p1 {
 
 h1, h2 {
 	font-weight: 700;
+	text-align: center;
+}
+
+p {
+	text-align: center;
 }
 
 #wrapper {
@@ -48,7 +53,7 @@ h1, h2 {
 #logo img {
 	width: 75%;
 	height: auto;
-	margin-left: 2.4em;
+	margin-left: 2.6em;
 }
 
 .item span {
@@ -59,9 +64,10 @@ h1, h2 {
 	margin-bottom: 2em;
 	width: 100%;
 	height: 100%;
+	align-items: center;
 }
 
-#nav li a{
+#nav li a {
 	color: #888888;
 	margin-left: 6em;
 	transition: all .3s ease-in-out;
@@ -98,17 +104,15 @@ h1, h2 {
 #projects .grid-item {
 	color: white;
 	position: relative;
-
 }
 
 #projects .grid-item img {
 	display:block;
 	width:100%;
 	height:auto;
-
 }
 
-	#projects .grid-item .overlay {
+#projects .grid-item .overlay {
 	opacity: 0;
 	transition: .3s ease-in-out;
 	position: absolute;
@@ -120,18 +124,30 @@ h1, h2 {
 	display:flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
 #projects .grid-item:hover .overlay {
 	opacity: 1;
-
 }
 
 #projects .grid-item .overlay .project-title h3 {
 	margin-bottom: 0;
+}
 
+#web {
+	text-align: center;
+}
 
+#web a {
+	color: #888888;
+	transition: all .3s ease-in-out;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+#web a:hover{
+	color: #cccccc;
+	text-decoration: none;
 }
 
 footer {
@@ -164,7 +180,15 @@ footer {
 		padding: 0em;
 	}
 
+		#nav li a {
+		margin-left: 4.5em;
+	}
+
+	h2, p {
+		margin: 1em;
+	}
 }
+
 
 /*
 
